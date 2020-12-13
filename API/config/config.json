@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "zruymspy",
+    "host": "suleiman.db.elephantsql.com",
+    "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "zruymspy",
+    "host": "suleiman.db.elephantsql.com",
+    "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "zruymspy",
+    "host": "suleiman.db.elephantsql.com",
+    "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
+    "dialect": "postgres"
+  }
+}

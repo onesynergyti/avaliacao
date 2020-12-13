@@ -1,0 +1,261 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Documentação do teste",
+    "description": "Documentação de apresentação do projeto de avaliação"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/usuarios/{id?}": {
+      "get": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Obter um ou vários usuários.",
+        "parameters": [
+          {
+            "name": "id?",
+            "in": "path",
+            "required": true,
+            "description": "ID do usuário como filtro opcional."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/usuarios/": {
+      "post": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Criar um usuário.",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/usuarios/{id}": {
+      "put": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Alterar um usuário.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do usuário que deve ser alterado."
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "tags": [
+          "Usuários"
+        ],
+        "description": "Excluir um usuário.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do usuário que deve ser excluído."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/cartas/{id?}": {
+      "get": {
+        "tags": [
+          "Cartas"
+        ],
+        "description": "Obter uma ou várias cartas.",
+        "parameters": [
+          {
+            "name": "id?",
+            "in": "path",
+            "required": true,
+            "description": "ID da carta como filtro opcional."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/cartas/": {
+      "post": {
+        "tags": [
+          "Cartas"
+        ],
+        "description": "Criar uma carta.",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/cartas/{id}": {
+      "put": {
+        "tags": [
+          "Cartas"
+        ],
+        "description": "Aterar uma carta.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID da carta que será alterada."
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "tags": [
+          "Cartas"
+        ],
+        "description": "Excluir uma carta.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID da carta que será excluída."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/historias/{id?}": {
+      "get": {
+        "tags": [
+          "Histórias"
+        ],
+        "description": "Obter uma ou várias histórias.",
+        "parameters": [
+          {
+            "name": "id?",
+            "in": "path",
+            "required": true,
+            "description": "ID da história como filtro opcional."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/historias/": {
+      "post": {
+        "tags": [
+          "Histórias"
+        ],
+        "description": "Criar uma história.",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/historias/{id}": {
+      "put": {
+        "tags": [
+          "Histórias"
+        ],
+        "description": "Alterar uma história.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID da história que será alterada."
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "tags": [
+          "Histórias"
+        ],
+        "description": "Excluir uma história.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID da história que será excluída."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/votos/{id?}": {
+      "get": {
+        "tags": [
+          "Votos"
+        ],
+        "description": "Obter um ou vários votos.",
+        "parameters": [
+          {
+            "name": "id?",
+            "in": "path",
+            "required": true,
+            "description": "ID do voto como filtro opcional."
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/votos/": {
+      "post": {
+        "tags": [
+          "Votos"
+        ],
+        "description": "Criar um voto.",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/votos/{id}": {
+      "put": {
+        "tags": [
+          "Votos"
+        ],
+        "description": "Alterar um voto.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do voto que será alterado."
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "tags": [
+          "Votos"
+        ],
+        "description": "Excluir um voto.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID do voto que será excluído."
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
