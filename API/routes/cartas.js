@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const cartas_controller = require('../controllers/cartasController');
+const helper_autoricacao = require('../helpers/validacaoJWT');
 
-var cartas_controller = require('../controllers/cartasController');
-
-router.get('/:id?', 
+router.get('/:id?', helper_autoricacao.validaJWT,
   // #swagger.tags = ['Cartas']
   // #swagger.description = 'Obter uma ou várias cartas.'
   // #swagger.parameters['id?'] = { description: 'ID da carta como filtro opcional.' }

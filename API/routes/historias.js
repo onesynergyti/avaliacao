@@ -1,7 +1,6 @@
-var express = require('express');
-var router = express.Router();
-
-var historias_controller = require('../controllers/historiasController');
+const express = require('express');
+const router = express.Router();
+const historias_controller = require('../controllers/historiasController');
 
 router.get('/:id?', 
   // #swagger.tags = ['Histórias']

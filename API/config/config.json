@@ -3,18 +3,27 @@
     "username": "zruymspy",
     "host": "suleiman.db.elephantsql.com",
     "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "RabbitMQ": "amqps://fheygpir:V9gMD961oQ2JQ1OxQpoRZySIJEWZAEoi@jellyfish.rmq.cloudamqp.com/fheygpir",
+    "WebSocketUrl": "ws://localhost:9898",
+    "APITokenSecret": "woifhdqwudhiwufiwef51f9325f19e8f1w9e8f198f19e1_@q5w16we51fwe1f9w"
   },
   "test": {
     "username": "zruymspy",
     "host": "suleiman.db.elephantsql.com",
     "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "RabbitMQ": "amqps://fheygpir:V9gMD961oQ2JQ1OxQpoRZySIJEWZAEoi@jellyfish.rmq.cloudamqp.com/fheygpir",
+    "WebSocketUrl": "ws://localhost:9898",
+    "APITokenSecret": "woifhdqwudhiwufiwef51f9325f19e8f1w9e8f198f19e1_@q5w16we51fwe1f9w"
   },
   "production": {
     "username": "zruymspy",
     "host": "suleiman.db.elephantsql.com",
     "password": "3o_Ec5w_BPbWR9xu1wY51Xd61CjKtexV",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "RabbitMQ": "amqps://fheygpir:V9gMD961oQ2JQ1OxQpoRZySIJEWZAEoi@jellyfish.rmq.cloudamqp.com/fheygpir",
+    "WebSocketUrl": "ws://localhost:9898",
+    "APITokenSecret": "woifhdqwudhiwufiwef51f9325f19e8f1w9e8f198f19e1_@q5w16we51fwe1f9w"
   }
 }

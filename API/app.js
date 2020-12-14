@@ -7,6 +7,7 @@ const usuariosRouter = require('./routes/usuarios');
 const cartasRouter = require('./routes/cartas');
 const historiasRouter = require('./routes/historias');
 const votosRouter = require('./routes/votos');
+const autenticacaoRouter = require('./routes/autenticacao');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
@@ -14,6 +15,7 @@ app.use('/usuarios', usuariosRouter);
 app.use('/cartas', cartasRouter);
 app.use('/historias', historiasRouter);
 app.use('/votos', votosRouter);
+app.use('/autenticacao', autenticacaoRouter);
 
 const server = app.listen(port, (error) => {
   if (error) return console.log(`Error: ${error}`);

@@ -255,6 +255,26 @@
         ],
         "responses": {}
       }
+    },
+    "/autenticacao/login": {
+      "post": {
+        "tags": [
+          "Autenticação"
+        ],
+        "description": "Obter um token para utilização da API.",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/autenticacao/logout": {
+      "post": {
+        "tags": [
+          "Autenticacao"
+        ],
+        "description": "Eliminar o token do usuário logado.",
+        "parameters": [],
+        "responses": {}
+      }
     }
   },
   "definitions": {}

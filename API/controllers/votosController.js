@@ -1,5 +1,6 @@
 const { Voto, Carta, Usuario, Historia} = require('../models');
-const WebSocket = require('ws')
+const RabbitMQ = require('../services/RabbitMQ');
+const WebSocket = require('../services/WebSocket')
 
 exports.lista_voto = async function(req, res, next) {
     const voto = req.params.id == null ? 
@@ -24,11 +25,9 @@ exports.cadastrar_voto = async function(req, res, next) {
         {model: Usuario, as: 'Usuario'},
         {model: Historia, as: 'Historia'}]}).catch(next)
 
-    // Divulga voto no websocket
-    const connection = new WebSocket('ws://localhost:9898')
-    connection.onopen = () => {
-        connection.send(`voto: Um novo voto foi enviado. Carta: ${votoCompleto.Carta.Valor}, Usuário: ${votoCompleto.Usuario.Nome}`)
-    }
+    WebSocket.SendWebSocket(`voto: Um novo voto foi enviado. Carta: ${votoCompleto.Carta.Valor}, Usuário: ${votoCompleto.Usuario.Nome}`)
+    RabbitMQ.sendMQ(JSON.stringify(votoCompleto))
+
     return res.send(voto)
 };
 

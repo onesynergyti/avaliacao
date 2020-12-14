@@ -1,7 +1,6 @@
-var express = require('express');
-var router = express.Router();
-
-var votos_controller = require('../controllers/votosController');
+const express = require('express');
+const router = express.Router();
+const votos_controller = require('../controllers/votosController');
 
 router.get('/:id?', 
   // #swagger.tags = ['Votos']
