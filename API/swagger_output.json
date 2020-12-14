@@ -269,7 +269,7 @@
     "/autenticacao/logout": {
       "post": {
         "tags": [
-          "Autenticacao"
+          "Autenticação"
         ],
         "description": "Eliminar o token do usuário logado.",
         "parameters": [],

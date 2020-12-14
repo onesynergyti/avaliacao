@@ -8,7 +8,7 @@ router.post('/login',
   cartas_controller.login);
 
 router.post('/logout', 
-  // #swagger.tags = ['Autenticacao']
+  // #swagger.tags = ['Autenticação']
   // #swagger.description = 'Eliminar o token do usuário logado.'
   cartas_controller.logout);
 
