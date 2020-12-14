@@ -9,18 +9,18 @@ router.get('/:id?', helper_autoricacao.validaJWT,
   // #swagger.parameters['id?'] = { description: 'ID da carta como filtro opcional.' }
   cartas_controller.lista_cartas);
 
-router.post('/', 
+router.post('/', helper_autoricacao.validaJWT,
   // #swagger.tags = ['Cartas']
   // #swagger.description = 'Criar uma carta.'
   cartas_controller.cadastrar_carta);
 
-router.put('/:id', 
+router.put('/:id', helper_autoricacao.validaJWT,
   // #swagger.tags = ['Cartas']
   // #swagger.description = 'Aterar uma carta.'
   // #swagger.parameters['id'] = { description: 'ID da carta que será alterada.' }
   cartas_controller.atualizar_carta);
 
-router.delete('/:id', 
+router.delete('/:id', helper_autoricacao.validaJWT,
   // #swagger.tags = ['Cartas']
   // #swagger.description = 'Excluir uma carta.'
   // #swagger.parameters['id'] = { description: 'ID da carta que será excluída.' }
